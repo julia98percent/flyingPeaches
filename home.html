@@ -6,42 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[UNOFFICIAL] Peach</title>
     <link href="./home.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <!-- header 시작 -->
     <header>
-        <div><img src="contents/logo.png" style="width:170px; height:50px"></div>
-        <ul>
-                <li>New Booking / Change Booking</li>
-                <li>Get Ready to Fly</li>
-                <li>Travel Services</li>
-                <li>Contact Us / Support</li>
-                <li>News</li>
-            </ul>
-        <div>
-        <div>login</div>
-        <div>lang</div>
+      <div class="headerBlock">    
+          <div class="titleBlock">
+                <div class="logo">
+                    <img src="./assets/logo.png" style="width:170px; height:50px">
+                </div>
+            </div>
+
+            <div class="header-navBlock">
+                <div class="header-menu">
+                    <ul>
+                        <li>New Booking / Change Booking</li>
+                        <li>Get Ready to Fly</li>
+                        <li>Travel Services</li>
+                        <li>Contact Us / Support</li>
+                        <li>News</li>
+                    </ul>
+                </div>
+                    <input type="button" value="login" id="login" />
+                <div class="langBlock">
+                    <div class="langText">
+                        language
+                    </div>
+                    <select id="langSelect">
+                        <option>Korean</option>
+                        <option selected>English</option>
+                        <option>Japanese</option>
+                        <option>Chinese</option>
+                    </select>
+                </div>
+            </div>
         </div>
-        </header>
+    </header>
+<!-- nav 시작 -->
     <nav>
         <div>
             <div class="row">
                 <div class="row-inner">
                     <ul>
-                        <li>Flight</li>
-                        <li>Hotel</li>
-                        <li>Renter car</li>
+                        <li><image class="nav-icon" src="./assets/airplane.png"></image>Flight</li>
+                        <li><image class="nav-icon" src="./assets/bed.png"></image>Hotel</li>
+                        <li><image class="nav-icon" src="./assets/car.png"></image>Renter car</li>
                     </ul>
-                    <ul>
-                        <li>Manage Booking</li>
-                        <li>Flight Status</li>
+                    <ul class="menu-table">
+                        <li class="nav-sub">Manage Booking</li>
+                        <li class="nav-sub">Flight Status</li>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="row-inner">
-                    <ul>
-                        <li>Roundtrip</li>
-                        <li>Oneway</li>
+                    <ul class="menu-table">
+                        <li class="nav-sub">Roundtrip</li>
+                        <li class="nav-sub">Oneway</li>
                     </ul>
                     <input type="text" placeholder="From" readonly="readonly">
                     <input type="text" placeholder="To" readonly="readonly">
@@ -49,8 +74,9 @@
                 <div class="row-inner">
                     <div id="date">
                         <ul>
-                            <li><input type="text" placeholder="Departing on" readonly="readonly"></li>
-                            <li><input type="text" placeholder="Returning on" readonly="readonly"></li>
+                                <image src="./assets/departure.png" style="width:30px; height:30px"></image>
+                                <li><input type="text" placeholder="Departing on" readonly="readonly" class="fromto"></li>
+                            <li><input type="text" placeholder="Returning on" readonly="readonly" class="fromto"></li>
                         </ul>
                     </div>
                     <div id="num">
@@ -65,8 +91,10 @@
             </div>  
         </div>
     </nav>
+
+<!-- visual 요소 컨테이너     -->
         <div class="container">
-            <div class="slide">
+            <div class="v-slide">
                 <ul>
                     <li class="item"><image src="./assets/9.jpeg"/></li>
                     <li class="item"><image src="./assets/10.jpeg"/></li>
@@ -76,105 +104,135 @@
                 </ul>        
             </div>
        </div>
-       <div>
+
+       <div class="v-contents">
+           <div class="v-table-wrap">
                 <ul class="menu-table">
                     <li class="menu-table-inner"><a href="#routes">routes</a></li>
-                    <li class="menu-table-inner"><a href="#inspired">inspired</a>
-                    </li>
-                    <li class="menu-table-inner"><a href="#hotel">hotel</a>
-                    </li>
+                    <li class="menu-table-inner"><a href="#inspired">inspired</a></li>
+                    <li class="menu-table-inner"><a href="#hotel">hotel</a></li>
                     <li class="menu-table-inner"><a href="#use">use</a></li>
                 </ul>
-                <div class="row">
-                    <h1 id="routes">Routes</h1>
-                    <div>
-                        <a href="https://twitter.com/animalcrossing/status/1371808805865021441/photo/2">
-                            <image class="thumb" src="./assets/9.jpeg"></image>
-                        </a>    
-                    </div>
+            </div>
+<!-- Routes -->
+            <div class="v-title-block" id="routes">
+                <h1 >Routes</h1>
+            </div>
+
+            <div class="desWrapper">
+                <a href="https://twitter.com/animalcrossing/status/1371808805865021441/photo/2">
+                    <image class="thumb" src="./assets/9.jpeg"></image>
+                </a>    
+            </div>
+<!-- inspired -->
+            <div class="v-title-block" id="inspired">
+                <h1>Get inspired</h1>
+            </div>
+
+            <div class="desWrapper">
+                <div class="v-thumb-block">
+                    <a href="https://twitter.com/animalcrossing/status/1371129017236127747/photo/1">
+                        <image class="thumb" src="./assets/10.jpeg"></image>
+                        <div>Eat pie on March 14th</div>
+                    </a>    
                 </div>
-                <div class="row">
-                    <h1 id="inspired">Get inspired</h1>
-                    <div>
-                        <a href="https://twitter.com/animalcrossing/status/1371129017236127747/photo/1">
-                            <image class="thumb" src="./assets/10.jpeg"></image>
-                            <div>Eat pie on March 14th</div>
-                        </a>    
-                    </div>
-                    <div>
-                        <a href="https://twitter.com/animalcrossing/status/1366442717040017413/photo/1">
-                            <image class="thumb" src="./assets/11.jpeg"></image>
-                            <div>Play like Super Mario Bros.</div>
-                        </a>    
-                    </div>
+
+                <div class="v-thumb-block">
+                    <a href="https://twitter.com/animalcrossing/status/1366442717040017413/photo/1">
+                        <image class="thumb" src="./assets/11.jpeg"></image>
+                        <div>Play like Super Mario Bros.</div>
+                    </a>    
                 </div>
-                <div class="row">
-                    <h1 id="hotel">Hotel, Cars, etc...</h1>
-                    <div>
+            </div>
+
+                <div class="v-title-block" id="hotel">
+                    <h1>Hotel, Cars, etc...</h1>
+                </div>
+
+                <div class="desWrapper">
+                    <div class="v-thumb-block">
                         <a href="https://twitter.com/animalcrossing/status/1413128241930457092/photo/1">
                             <image class="thumb" src="./assets/3.jpeg"></image>
                             <div>Blue Seaside</div>
                         </a>    
                     </div>
-                    <div>
+                    <div class="v-thumb-block">
                         <a href="https://twitter.com/animalcrossing/status/1413920964916793345/photo/1">
                             <image class="thumb" src="./assets/1.jpeg"></image>
                             <div>Wagon</div>
                         </a>    
                     </div>
-                    <div>
+                    <div class="v-thumb-block">
                         <a href="https://twitter.com/animalcrossing/status/1401604098693206027/photo/1">
                             <image class="thumb" src="./assets/6.jpeg"></image>
                             <div>Rice cake</div>
                         </a>    
                     </div>
                 </div>
-                <div class="row">
-                    <h1 id="deals">Current deals</h1>
-                    <div>
+
+                <div class="v-title-block" id="deals">
+                    <h1>Current deals</h1>
+                </div>
+                
+                <div class="desWrapper">
+                    <div class="v-thumb-block">
                         <a href="https://twitter.com/animalcrossing/status/1399784887775866885/photo/1">
                             <image class="thumb" src="./assets/7.jpeg"></image>
                             <div>Taking wedding photos</div>
                         </a>    
                     </div>
-                    <div>
+                    <div class="v-thumb-block">
                         <a href="https://twitter.com/animalcrossing/status/1378693848348647432/photo/1">
                             <image class="thumb" src="./assets/8.jpeg"></image>
                             <div>Happy Bunny Day</div>
                             </a>
                     </div>
                 </div>
-                <div class="row">
-                    <h1 id="use">How to get</h1>
-                    <div>
-                        <a href="#">
-                            <image src="./assets/Peach.png"></image>
-                            <div>Peach.</div>
-                        </a>    
-                    </div>
-                    <div>
-                        <a href="#">
-                            <image src="./assets/BottleRecipe.png"></image>
-                            <div>BottleRecipe</div>
-                            </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <image src="./assets/LostQuestBagDust.png"></image>
-                            <div>LostBag</div>
-                        </a>    
-                    </div>
-                    <div>
-                        <a href="#">
-                            <image src="./assets/ShellDriftHora.png"></image>
-                            <div>ShellDriftHora</div>
-                        </a>    
-                    </div>
+                <div class="v-title-block" id="use">
+                    <h1 >How to get</h1>
                 </div>
+                <div>
+                    <a href="#">
+                            <image src="./assets/Peach.png"></image>
+                            <div>Peach</div>
+                    </a>    
+                </div>  
+
+                <div>
+                    <a href="#">
+                       
+                            <image src="./assets/BottleRecipe.png"></image>
+                            <div>Bottle Recipe</div>
+                        
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                       
+                            <image src="./assets/LostQuestBagDust.png"></image>
+                            <div>Lost Bag</div>
+                        
+                    </a>    
+                </div>
+
+                <div>
+                    <a href="#">
+                       
+                            <image src="./assets/ShellDriftHora.png"></image>
+                            <div>Conch</div>
+                        
+                    </a>    
+                </div>
+
+                <!-- 다른 형식으로 (50%) -->
                 <div class="row">
                     <div class="row-inner">
                         <h1>News</h1>
-                        <h1>Forest Information</h1>
+                        <div>
+                            <h1>Forest Information</h1>
+                            <a class="twitter-timeline" href="https://twitter.com/animalcrossing?ref_src=twsrc%5Etfw">Tweets by animalcrossing</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
                     </div>
                 </div>
         </div>
