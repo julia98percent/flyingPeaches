@@ -14,7 +14,8 @@
 <body>
     <!-- header 시작 -->
     <header>
-      <div class="headerBlock">    
+      <div class="headerBlock">
+
           <div class="titleBlock">
                 <div class="logo">
                     <img src="./assets/logo.png" style="width:170px; height:50px">
@@ -22,6 +23,7 @@
             </div>
 
             <div class="header-navBlock">
+
                 <div class="header-menu">
                     <ul>
                         <li>New Booking / Change Booking</li>
@@ -31,7 +33,8 @@
                         <li>News</li>
                     </ul>
                 </div>
-                    <input type="button" value="login" id="login" />
+
+                <input type="button" value="login" id="login" />
                 <div class="langBlock">
                     <div class="langText">
                         language
@@ -43,78 +46,104 @@
                         <option>Chinese</option>
                     </select>
                 </div>
+
             </div>
+
         </div>
     </header>
+
 <!-- nav 시작 -->
-    <nav>
-        <div>
-            <div class="row">
-                <div class="row-inner">
-                    <ul>
-                        <li><image class="nav-icon" src="./assets/airplane.png"></image>Flight</li>
-                        <li><image class="nav-icon" src="./assets/bed.png"></image>Hotel</li>
-                        <li><image class="nav-icon" src="./assets/car.png"></image>Renter car</li>
-                    </ul>
-                    <ul class="menu-table">
-                        <li class="nav-sub">Manage Booking</li>
-                        <li class="nav-sub">Flight Status</li>
-                    </ul>
-                </div>
+    <nav class="navBlock">
+        <div class="searchBtnBlock"> 
+            <div class="row-inner">
+                <ul class="main-menu">
+                    <li class="clicked-menu">
+                        <image class="nav-icon" src="./assets/airplane.png"></image>
+                        <span>Flight</span>
+                    </li>
+                    <li>
+                        <image class="nav-icon" src="./assets/bed.png"></image>
+                        <span>Hotel</span>
+                    </li>
+                    <li>
+                        <image class="nav-icon" src="./assets/car.png"></image>
+                        <span>Renter car</span>
+                    </li>
+                </ul>
+
+                <ul class="sub-menu">
+                    <li class="sub-menu-item">Manage Booking</li>
+                    <li class="sub-menu-item">Flight Status</li>
+                </ul>
             </div>
+        </div>
+
+        <div class="searchBlcok">
             <div class="row">
-                <div class="row-inner">
-                    <ul class="menu-table">
+                    <ul class="typeBlock">
                         <li class="nav-sub">Roundtrip</li>
                         <li class="nav-sub">Oneway</li>
                     </ul>
-                    <input type="text" placeholder="From" readonly="readonly">
-                    <input type="text" placeholder="To" readonly="readonly">
-                </div>
-                <div class="row-inner">
-                    <div id="date">
-                        <ul>
-                                <image src="./assets/departure.png" style="width:30px; height:30px"></image>
-                                <li><input type="text" placeholder="Departing on" readonly="readonly" class="fromto"></li>
-                            <li><input type="text" placeholder="Returning on" readonly="readonly" class="fromto"></li>
-                        </ul>
-                    </div>
-                    <div id="num">
-                        <ul>
-                            <li><input type="text" placeholder="Adult" readonly="readonly"></li>
-                            <li><input type="text" placeholder="Child" readonly="readonly"></li>
-                            <li><input type="text" placeholder="Infant" readonly="readonly"></li>
-                        </ul>
-                    </div>
-                    <button>search</button>
-                </div>
-            </div>  
-        </div>
+
+                    <ul class="locationBlock">
+                        <li>
+                            <image src="./assets/departure.png" style="width:30px; height:30px"></image>
+                            <label><input type="text" placeholder="From" readonly="readonly"></label>
+                            <image src="./assets/menu.png" style="width:30px; height:30px"></image>
+                        </li>
+                        <li>
+                            <image src="./assets/arrival.png" style="width:30px; height:30px"></image>
+                            <label><input type="text" placeholder="To" readonly="readonly"></label>
+                            <image src="./assets/menu.png" style="width:30px; height:30px"></image>
+                        </li>
+                    </ul>       
+            </div>
+        <!-- <div class="row">
+            <ul class="dateBlock">
+                <li>
+                    <label><input type="text" placeholder="Departing on" readonly="readonly"></label>
+                    <image src="./assets/calendar.png" style="width:30px; height:30px"></image>
+                </li>
+                <li>
+                    <label><input type="text" placeholder="Arrival on" readonly="readonly"></label>
+                    <image src="./assets/calendar.png" style="width:30px; height:30px"></image>
+                </li>
+            </ul>
+
+            <ul class="numBlock">
+                <li><input type="text" placeholder="Adult" readonly="readonly"></li>
+                <li><input type="text" placeholder="Child" readonly="readonly"></li>
+                <li><input type="text" placeholder="Infant" readonly="readonly"></li>
+            </ul>
+
+            <button>search</button>
+        </div>   -->
     </nav>
 
 <!-- visual 요소 컨테이너     -->
-        <div class="container">
-            <div class="v-slide">
-                <ul>
-                    <li class="item"><image src="./assets/9.jpeg"/></li>
-                    <li class="item"><image src="./assets/10.jpeg"/></li>
-                    <li class="item"><image src="./assets/1.jpeg"/></li>
-                    <li class="item"><image src="./assets/8.jpeg"/></li>
-                    <li class="item"><image src="./assets/2.jpeg"/></li>
-                </ul>        
-            </div>
-       </div>
+    <div class="container">
+        <div class="slider">
+            <ul>
+                <li class="slide-item"><image src="./assets/9.jpeg"/></li>
+                <li class="slide-item"><image src="./assets/10.jpeg"/></li>
+                <li class="slide-item"><image src="./assets/1.jpeg"/></li>
+                <li class="slide-item"><image src="./assets/8.jpeg"/></li>
+                <li class="slide-item"><image src="./assets/2.jpeg"/></li>
+            </ul>        
+        </div>
+    </div>
 
-       <div class="v-contents">
-           <div class="v-table-wrap">
-                <ul class="menu-table">
-                    <li class="menu-table-inner"><a href="#routes">routes</a></li>
-                    <li class="menu-table-inner"><a href="#inspired">inspired</a></li>
-                    <li class="menu-table-inner"><a href="#hotel">hotel</a></li>
-                    <li class="menu-table-inner"><a href="#use">use</a></li>
-                </ul>
-            </div>
+    <div class="v-contents">
+        <div class="v-table-row">
+            <ul class="v-nav-list">
+                <li class="v-nav-item"><a href="#routes"><h2>routes</h2></a></li>
+                <li class="v-nav-item"><a href="#inspired"><h2>inspired</h2></a></li>
+                <li class="v-nav-item"><a href="#hotel"><h2>hotel</h2></a></li>
+                <li class="v-nav-item"><a href="#use"><h2>use</h2></a></li>
+            </ul>
+        </div>
 <!-- Routes -->
+        <div class="row">
             <div class="v-title-block" id="routes">
                 <h1 >Routes</h1>
             </div>
@@ -124,7 +153,9 @@
                     <image class="thumb" src="./assets/9.jpeg"></image>
                 </a>    
             </div>
+        </div>
 <!-- inspired -->
+        <div class="row">
             <div class="v-title-block" id="inspired">
                 <h1>Get inspired</h1>
             </div>
@@ -144,105 +175,123 @@
                     </a>    
                 </div>
             </div>
+        </div>
 
-                <div class="v-title-block" id="hotel">
-                    <h1>Hotel, Cars, etc...</h1>
-                </div>
+<!-- hotel car etc -->
+        <div class="row">
+            <div class="v-title-block" id="hotel">
+                <h1>Hotel, Cars, etc...</h1>
+            </div>
 
-                <div class="desWrapper">
-                    <div class="v-thumb-block">
-                        <a href="https://twitter.com/animalcrossing/status/1413128241930457092/photo/1">
-                            <image class="thumb" src="./assets/3.jpeg"></image>
-                            <div>Blue Seaside</div>
-                        </a>    
-                    </div>
-                    <div class="v-thumb-block">
-                        <a href="https://twitter.com/animalcrossing/status/1413920964916793345/photo/1">
-                            <image class="thumb" src="./assets/1.jpeg"></image>
-                            <div>Wagon</div>
-                        </a>    
-                    </div>
-                    <div class="v-thumb-block">
-                        <a href="https://twitter.com/animalcrossing/status/1401604098693206027/photo/1">
-                            <image class="thumb" src="./assets/6.jpeg"></image>
-                            <div>Rice cake</div>
-                        </a>    
-                    </div>
+            <div class="desWrapper">
+                <div class="v-thumb-block">
+                    <a href="https://twitter.com/animalcrossing/status/1413128241930457092/photo/1">
+                        <image class="thumb" src="./assets/3.jpeg"></image>
+                        <div>Blue Seaside</div>
+                    </a>    
                 </div>
 
-                <div class="v-title-block" id="deals">
-                    <h1>Current deals</h1>
+                <div class="v-thumb-block">
+                    <a href="https://twitter.com/animalcrossing/status/1413920964916793345/photo/1">
+                        <image class="thumb" src="./assets/1.jpeg"></image>
+                        <div>Wagon</div>
+                    </a>    
                 </div>
-                
-                <div class="desWrapper">
-                    <div class="v-thumb-block">
-                        <a href="https://twitter.com/animalcrossing/status/1399784887775866885/photo/1">
-                            <image class="thumb" src="./assets/7.jpeg"></image>
-                            <div>Taking wedding photos</div>
-                        </a>    
-                    </div>
-                    <div class="v-thumb-block">
-                        <a href="https://twitter.com/animalcrossing/status/1378693848348647432/photo/1">
-                            <image class="thumb" src="./assets/8.jpeg"></image>
-                            <div>Happy Bunny Day</div>
-                            </a>
-                    </div>
+
+                <div class="v-thumb-block">
+                    <a href="https://twitter.com/animalcrossing/status/1401604098693206027/photo/1">
+                        <image class="thumb" src="./assets/6.jpeg"></image>
+                        <div>Rice cake</div>
+                    </a>    
                 </div>
-                <div class="v-title-block" id="use">
-                    <h1 >How to get</h1>
+
+            </div>
+        </div>    
+
+
+        <!-- current deals -->
+        <div class="row">
+            <div class="v-title-block" id="deals">
+                <h1>Current deals</h1>
+            </div>
+            
+            <div class="desWrapper">
+                <div class="v-thumb-block">
+                    <a href="https://twitter.com/animalcrossing/status/1399784887775866885/photo/1">
+                        <image class="thumb" src="./assets/7.jpeg"></image>
+                        <div>Taking wedding photos</div>
+                    </a>    
                 </div>
-                <div>
+
+                <div class="v-thumb-block">
+                    <a href="https://twitter.com/animalcrossing/status/1378693848348647432/photo/1">
+                        <image class="thumb" src="./assets/8.jpeg"></image>
+                        <div>Happy Bunny Day</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="v-title-block" id="use">
+                <h1 >How to get</h1>
+            </div>
+
+            <div class="v-thumb-list">
+                <div class="v-thumb-item">
                     <a href="#">
-                            <image src="./assets/Peach.png"></image>
-                            <div>Peach</div>
+                        <image src="./assets/Peach.png"></image>
+                        <div>Peach</div>
                     </a>    
                 </div>  
 
-                <div>
+                <div class="v-thumb-item">
                     <a href="#">
-                       
-                            <image src="./assets/BottleRecipe.png"></image>
-                            <div>Bottle Recipe</div>
-                        
+                        <image src="./assets/BottleRecipe.png"></image>
+                        <div>Bottle Recipe</div>
                     </a>
                 </div>
 
-                <div>
+                <div class="v-thumb-item">
                     <a href="#">
-                       
-                            <image src="./assets/LostQuestBagDust.png"></image>
-                            <div>Lost Bag</div>
-                        
+                        <image src="./assets/LostQuestBagDust.png"></image>
+                        <div>Lost Bag</div>
                     </a>    
                 </div>
 
-                <div>
+                <div class="v-thumb-item">
                     <a href="#">
-                       
-                            <image src="./assets/ShellDriftHora.png"></image>
-                            <div>Conch</div>
-                        
+                        <image src="./assets/ShellDriftHora.png"></image>
+                        <div>Conch</div>
                     </a>    
                 </div>
-
-                <!-- 다른 형식으로 (50%) -->
-                <div class="row">
-                    <div class="row-inner">
-                        <h1>News</h1>
-                        <div>
-                            <h1>Forest Information</h1>
-                            <a class="twitter-timeline" href="https://twitter.com/animalcrossing?ref_src=twsrc%5Etfw">Tweets by animalcrossing</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        </div>
-                    </div>
-                </div>
+            </div>    
         </div>
-    <footer>
-      tistory
-      github
-      notion
-      <div class="pageTop">
-        <a>pageTop</a>
+
+        <!-- 다른 레이아웃으로 (50%) -->
+        <div class="row half-width">
+            <h1>News</h1>
+            <div>
+                <span>최근 뉴스가 없습니다.</span>
+            </div>
+        </div>
+        <div class="row half-width">
+            <h1>Forest Information</h1>
+            <a class="twitter-timeline" href="https://twitter.com/animalcrossing?ref_src=twsrc%5Etfw" height="500px">Tweets by animalcrossing</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
     </div>
+
+    <footer>
+        <div class="row">
+            <ul>
+                <li><a href="bsscl.tistory.com"><span>티스토리</span></a></li>
+                <li><a href="julia98percent.github.io">깃허브</a></li>
+            </ul>
+        </div>
+        <div class="pageTop">
+            <a>pageTop</a>
+        </div>
     </footer>
     
     <script src="home.js"></script>

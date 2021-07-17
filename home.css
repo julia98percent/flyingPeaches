@@ -19,23 +19,13 @@ li {
   text-align: center;
   list-style-position: inside;
 }
-/* div {
-  float: left;
-} */
 
-nav {
-  display: flex;
-  background-color: pink;
-}
 .row-inner {
   flex: left;
   display: flex;
 }
 .row {
   display: block;
-  align-items: center;
-  text-align: center;
-  width: 100%;
 }
 .container {
   width: 100%;
@@ -53,13 +43,6 @@ image {
   width: 500px;
   margin: 0 auto;
   border-collapse: collapse;
-}
-.menu-table-inner {
-  display: table-cell;
-  /* text-align: center; */
-  width: 20%;
-  text-align: center;
-  vertical-align: middle;
 }
 .pageTop {
   position: fixed;
@@ -86,11 +69,12 @@ image {
   color: white;
 }
 .item {
-  width: 1300px;
+  width: 1200px;
+  display: inline-block;
 }
 .nav-icon {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
 }
 
 .nav-sub {
@@ -114,9 +98,10 @@ image {
 }
 .v-thumb-block {
   float: left;
-  margin: 0 auto;
-  display: flex;
+  /* margin: 0 auto; */
+  /* display: flex; */
 }
+
 h2 {
   display: block;
   font-size: 1.5em;
@@ -126,9 +111,7 @@ h2 {
   margin-inline-end: 0px;
   font-weight: bold;
 }
-.desWrapper {
-  float: left;
-}
+
 .flex-wrapper {
   display: flex;
 }
@@ -159,4 +142,88 @@ h2 {
   display: inline-block;
   margin-top: auto;
   margin-bottom: auto;
+}
+.navBlock {
+  background-color: pink;
+}
+.searchBlock {
+  max-width: 1200px;
+}
+.clicked-menu {
+  border-bottom: red;
+}
+/* .searchBtnBlock {
+  display: flex;
+} */
+.dateBlock {
+  display: flex;
+}
+.numBlock {
+  display: flex;
+}
+image {
+  width: 25%;
+  height: 25%;
+}
+.typeBlock {
+  display: flex;
+  float: left;
+}
+.locationBlock {
+  display: flex;
+}
+ul {
+  margin: 0;
+}
+.slider {
+  animation: spinHorizontal 10000s infinite linear;
+  overflow: hidden;
+}
+@keyframes spinHorizontal {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(30deg);
+  }
+}
+.slide-item {
+  width: 1200px;
+  height: 620px;
+}
+.v-nav-list {
+  border: 1px solid red;
+  display: table;
+  width: 100%;
+  padding: 0;
+}
+.v-nav-item {
+  display: table-cell;
+  vertical-align: middle;
+  table-layout: fixed;
+}
+h2 {
+  padding: 15px 10px 30px;
+}
+.v-contents {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.desWrapper {
+  display: flex;
+}
+.v-thumb-list {
+  display: table;
+  table-layout: fixed;
+}
+.v-thumb-item {
+  display: table-cell;
+}
+.half-width {
+  width: 50%;
+  float: left;
+}
+footer {
+  position: relative;
+  max-width: 1200px;
 }
