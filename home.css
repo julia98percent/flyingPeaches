@@ -196,3 +196,21 @@ footer {
   margin-top: auto;
   margin-bottom: auto;
 }
+.header-menu ul ul {
+  display: none;
+}
+
+.header-menu ul > li:hover .header-submenu {
+  display: table;
+  position: absolute;
+  transition: ease 3s;
+  z-index: 500;
+  background-color: white;
+  width: 100vw;
+}
+.header-menu ul > li:hover .header-submenu li {
+  /* display: table-cell; */
+  border-left: 1px solid #9b308c;
+  border-right: 1px solid #9b308c;
+  float: left;
+}

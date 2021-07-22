@@ -12,7 +12,7 @@
 
 <body>
     <!-- header 시작 -->
-    <header>
+    <header id="top">
       <div class="headerBlock">
 
           <div class="titleBlock">
@@ -22,13 +22,44 @@
             </div>
 
             <div class="header-navBlock">
-
                 <div class="header-menu">
                     <ul>
-                        <li>New Booking / Change Booking</li>
-                        <li>Get Ready to Fly</li>
-                        <li>Travel Services</li>
-                        <li>Contact Us / Support</li>
+                        <li>New Booking / Change Booking
+                            <ul class="header-submenu">
+                                <li>[LCC]Peach’s Booking-Guide</li>
+                                <li>Regular Fares</li>
+                                <li>Fees and Charges</li>
+                                <li>Baggage (Carry-on / Check in)</li>
+                                <li>Seat Selection</li>
+                                <li>Fare Conditions</li>
+                                <li>Payment Methods</li>
+                                <li>Peach Point</li>
+                                <li>Routes</li>
+                                <li>Flight Schedules</li>
+                            </ul>
+                        </li>
+                        <li>Get Ready to Fly
+                            <ul class="header-submenu">
+                                <li>How to Check in</li>
+                                <li>Delay/Cancellation Related Support</li>
+                                <li>Airport Guide</li>
+                                <li>IN-FLIGHT DIGITAL SERVICE</li>
+                                <li>Aircraft</li>
+                            </ul>
+                        </li>
+                        <li>Travel Services
+                            <ul class="header-submenu">
+                                <li>Insurance</li>
+                                <li>Hotel</li>
+                                <li>Rental Car</li>
+                            </ul>
+                        </li>
+                        <li>Contact Us / Support
+                            <ul class="header-submenu">
+                                <li>FAQ</li>
+                                <li>Special Support</li>
+                            </ul>
+                        </li>
                         <li>News</li>
                     </ul>
                 </div>
@@ -288,9 +319,8 @@
                 <li><a href="julia98percent.github.io">깃허브</a></li>
             </ul>
         </div>
-        <div class="pageTop">
-            <a>pageTop</a>
-        </div>
+        <a href="#routes" style="z-index: 300;"><div style="position: absolute;">pageTop</div></a>
+       
     </footer>
     
     <script src="home.js"></script>
