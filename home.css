@@ -2,14 +2,12 @@ body {
   margin: 0;
   max-width: 100vw;
   font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
 }
 header {
-  /* display: flex; */
   align-items: center;
-  /* justify-content: space-between; */
   width: 100%;
 }
+
 ul {
   list-style: none;
 }
@@ -37,20 +35,13 @@ image {
   align-items: center;
   display: block;
 }
-.menu-table {
-  display: table;
-  table-layout: fixed;
-  width: 500px;
-  margin: 0 auto;
-  border-collapse: collapse;
-}
+
 .pageTop {
   position: fixed;
   right: 0;
   bottom: 70px;
   transition: ease opacity 0.4s;
   pointer-events: none;
-  /* opacity: 0; */
   color: #9b308c;
   z-index: 3000;
   background-color: aqua;
@@ -59,19 +50,7 @@ image {
   width: 320px;
   height: 150px;
 }
-.login-btn {
-  content: "";
-  border: solid 1px pink;
-  /* transition: all 0.4s linear(0.5, 0.24, 0, 1); */
-}
-.login-btn:hover {
-  background-color: pink;
-  color: white;
-}
-.item {
-  width: 1200px;
-  display: inline-block;
-}
+
 .nav-icon {
   width: 35px;
   height: 35px;
@@ -81,13 +60,7 @@ image {
   border: solid 1px white;
   margin-left: -1px;
 }
-.date-ap {
-  width: 50px;
-  height: 50px;
-}
-.fromto {
-  padding-left: 40px;
-}
+
 .v-title-block {
   margin: 100px 0 50px;
   text-align: center;
@@ -102,21 +75,11 @@ image {
   /* display: flex; */
 }
 
-h2 {
-  display: block;
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-
-.flex-wrapper {
-  display: flex;
-}
 .headerBlock {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
 }
 .header-navBlock {
   display: flex;
@@ -144,7 +107,11 @@ h2 {
   margin-bottom: auto;
 }
 .navBlock {
+  position: sticky;
   background-color: pink;
+  /* 이왜잘...? */
+  top: -1px;
+  z-index: 5;
 }
 .searchBlock {
   max-width: 1200px;
@@ -152,19 +119,17 @@ h2 {
 .clicked-menu {
   border-bottom: red;
 }
-/* .searchBtnBlock {
-  display: flex;
-} */
+
 .dateBlock {
   display: flex;
 }
 .numBlock {
   display: flex;
 }
-image {
+/* image {
   width: 25%;
   height: 25%;
-}
+} */
 .typeBlock {
   display: flex;
   float: left;
@@ -177,7 +142,7 @@ ul {
 }
 .slider {
   animation: spinHorizontal 10000s infinite linear;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 @keyframes spinHorizontal {
   0% {
@@ -226,4 +191,8 @@ h2 {
 footer {
   position: relative;
   max-width: 1200px;
+}
+.header-menu {
+  margin-top: auto;
+  margin-bottom: auto;
 }
